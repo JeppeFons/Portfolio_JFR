@@ -108,22 +108,36 @@
             <div class="work__text">
               <h3>Computer vision project</h3>
               <p>
-                in this project i used computer vision to first scale the images down, retaining only the most important
-                features or information, and then use this information to scale up the images to regular size, looking like
-                 the original.
-                 the model is trained on a real world dataset (dataset beskrivelse, antal observationer, osv.)
-                 the PCAM dataset consists of 327,680 color images (96x96pxs) extracted from histopathologic scans of 
-                 lymph node sections. Each image is annotated with a binary label indicating presence of metastatic tissue. Specifically, the dataset is divided into 262,144 training images, 32,768 validation images, and 32,768 test images.
+                The purpose of the project was to apply computer vision techniques for the 
+                automatic classification of medical images of lymph nodes, aiming to distinguish 
+                between benign and malignant lesions. The goal was to develop a decision support tool for the diagnosis of lymph node cancer.
+                <br> <br>
+                For this projekt i used the patchcamelyon dataset from Kaggle which consists of 327,680 color images (96x96pxs)
+                 extracted from histopathologic scans of 
+                lymph node sections.
+                <br> <br>
+                I experimented with developing an autoencoder and a
+                variational autoencoder to compress- and upscale images and a CNN to classify the output. 
+                After i was satisfied with my baseline
+                  models i started experimenting with different optimizers, loss funktions,
+                  activation funktions and regularization to improve performance.
+
+      
+                <br> <br>
+                I got experience using:
               </p>
               <ul class="work__list">
-                <li>Auto Encoder</li>
-                <li>CNN</li>
+                <li>Auto Encoders</li>
+                <li>CNN's</li>
                 <li>Tensorflow</li>
+                <li>Keras</li>
                 <li>pandas</li>
                 <li>numpy</li>
                 <li>matplotlib</li>
                 <li>sklearn</li>
-
+              </p>
+                And much more...
+              </p>
               </ul>
 
               <div class="work__links">
