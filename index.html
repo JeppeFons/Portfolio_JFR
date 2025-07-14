@@ -83,12 +83,30 @@
             <div class="work__text">
               <h3> Random Forest project</h3>
               <p>
-              ## Project description ##
+                The purpose of this project is to gain hands-on experience with implementing 
+                an MLflow pipeline and deploying a Random Forest (RF) model using FastAPI. 
+                The goal is to follow best practices to optimize the performance of the RF model. 
+                This includes handling class imbalance in the dataset using SMOTE, and applying 
+                stratified K-fold cross-validation (instead of a simple validation split), as 
+                it ensures an even distribution of cases and controls across the folds. 
+                Additionally, I apply hyperparameter tuning and log all relevant information in MLflow.
+                <br>
+                The dataset used is the Credit Card Fraud Detection dataset 
+                from Kaggle.com (link provided in the README.md).
+                <br>
+                The dataset is highly imbalanced, with only 0.172% of the transactions labeled as fraud. 
+                This extreme imbalance requires the use of various techniques to improve the model’s 
+                ability to correctly predict fraudulent transactions.
+                <br>
+                It contains only numerical input variables, which are the result of a PCA transformation. 
+                Unfortunately.
               </p>
               <ul class="work__list">
                 <li>MLflow</li>
-                <li>Tensorflow/Pytorch</li>
                 <li>FASTAPI</li>
+                <li>SKlearn</li>
+                <li>imblearn</li>
+                <li>SMOTE</li>
                 <li>Github Actions</li>
               </ul>
 
