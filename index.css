@@ -505,6 +505,29 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+/* ny section */
+.work__image-box--smallgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolonner med lige stor bredde */
+  gap: 1rem; /* afstand mellem billederne */
+  margin-bottom: var(--gutter-normal);
+}
+
+.work__image-box--smallgrid .work__image {
+  width: 100%; /* billedet fylder kolonnen */
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px; /* evt. lidt afrundede hjørner, hvis ønsket */
+}
+
+/* Responsivt kan du evt. lave 1 kolonne på små skærme: */
+@media (max-width: 600px) {
+  .work__image-box--smallgrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
